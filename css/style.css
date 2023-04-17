@@ -1,0 +1,460 @@
+/* font */
+@font-face {
+    font-family: 'TTTtangsbudaejjigaeB';
+    /* title */
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2212@1.0/TTTtangsbudaejjigaeB.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Hahmlet-Regular';
+    /* mainp p */
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2110@1.0/Hahmlet-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SSVeryBadHandwriting';
+    /* btn */
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2202@1.0/SSVeryBadHandwriting.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'KimjungchulScript-Bold';
+    /* point p */
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302_01@1.0/KimjungchulScript-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+
+/* normalize */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    max-width: 100%;
+}
+
+body,html {
+    background-color: var(--text-color);
+    max-width: 1920px;
+    min-width: 360px;
+    margin: auto;
+    scroll-behavior: smooth;
+}
+
+img{
+    display: block;
+}
+
+::-webkit-scrollbar{
+    width: 8px;
+}
+
+::-webkit-scrollbar-track{
+    background-color: var(--text-color);
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: var(--btn-color);
+    border-radius: 10px;
+}
+
+a{
+    color:inherit;
+    text-decoration: none;
+}
+
+:root{
+    --background-color:#fefbf5;
+    --subpoint-color:#e1f1ff;
+    --btn-color:#ffeea6;
+    --text-color:#3e4a22;
+    --detail-text:#444142;
+    --point-color:#f17c81;
+}
+/* normalize */
+
+
+
+
+/* ////main//// */
+main{
+    width:100%;
+    max-height: 1920px;
+    min-width: 360px;
+    height: 100vh;
+    max-height: 1080px;
+    background: url(../img/main.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+/* title */
+main .title{
+    position: absolute;
+    top:50%;
+    left: 8%;
+    transform: translateY(-50%);
+    width: 550px;
+    font-size: 29px;
+}
+
+main .title>img{
+    width: 265px;
+}
+
+main .title>h2{
+    display: inline-block;
+    margin-top: 15px;
+    font-size: 1em;
+    line-height: 1.55em;
+    font-weight:600;
+    font-family: 'TTTtangsbudaejjigaeB';
+    color:var(--text-color);
+}
+
+main .title>h5{
+    display: inline-block;
+    color:var(--detail-text);
+    border: 1px solid var(--text-color);
+    font-size: 0.55em;
+    padding: 4px 15px;
+    margin-bottom: 30px;
+}
+
+main .title>div{
+    width:100%;
+    height: auto;
+    line-height: 34px;
+    font-size: 0.7em;
+    margin-left: 25px;
+    display: block;
+    border-left: 1px solid var(--text-color);
+    position: relative;
+}
+
+main .title>div p{
+    padding-top: 15px;
+    padding-left: 20px;
+    padding-bottom: 85px;
+    font-family: 'Hahmlet-Regular';
+    color:var(--text-color);
+}
+
+main .title>div>a{
+    border-radius: 100%;
+    border: 1px solid var(--text-color);
+    width:210px;
+    height: 55px;
+    line-height: 55px;
+    font-size: 1.5em;
+    text-align: center;
+    position: absolute;
+    bottom: 5px;
+    left: -15px;
+    background-color: var(--btn-color);
+    font-family: 'SSVeryBadHandwriting';
+}
+
+/* scroll_down */
+.scroll{
+    position: absolute;
+    left: 45%;
+    bottom: 100px;
+}
+
+.scroll-down{
+    display: block;
+    width:120px;
+    height: 36px;
+    border:1px solid var(--text-color);
+    background-color:transparent;
+    border-radius: 50px;
+    cursor: pointer;
+    z-index: 3;
+}
+
+.scroll-down::before,.scroll-down::after{
+    content: "";
+    width:20px;
+    height: 20px;
+    position: absolute;
+    top:20%;
+    left: 50%;
+    transform: translate(-50%,-50%) rotate(45deg);
+    border:1px solid #333232;
+    border-top:transparent;
+    border-left: transparent;
+    animation: MoveArrow 1.9s ease-in-out infinite;
+}
+
+.scroll-down::after{
+    top:30%;
+    animation-delay: 0.5s;
+}
+
+@keyframes MoveArrow{
+    0%{
+        opacity: 0;
+    }
+
+    30%{
+        opacity: 1;
+    }
+
+    60%{
+        opacity: 1;
+    }
+
+    100%{
+        opacity: 0;
+        top:90%;
+    }
+}
+/* ////main//// */
+
+
+
+
+/* ////contents_inner//// */
+.inner{
+    width:1200px;
+    margin: 50px 0;
+    margin: auto;
+}
+
+/* Common section */
+.s1,.s2,.s3{
+    width:100%;
+    padding: 150px 0;
+    color:var(--background-color);
+    border-bottom: 1px solid var(--btn-color);
+    display: flex;
+    gap: 4em;
+    justify-content: center;
+    font-size: 21px;
+}
+
+p{
+    font-size: 0.8em;
+}
+
+.s1 h5,.s2 h5,.s3 h5 {
+    font-size: 1em;
+    font-family: 'TTTtangsbudaejjigaeB';
+    color:var(--btn-color);
+    font-weight: 300;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+/* ////s1//// */
+.s1 .textbox{
+    width: 270px;
+    height: 95px;
+    background-color: var(--background-color);
+    color:var(--text-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin: auto;
+}
+
+.s1 hr{
+    width: 1px;
+    height: 30px;
+    margin: auto;
+}
+
+.s1 p {
+    line-height: 1.9em;
+    font-family: 'KimjungchulScript-Bold';
+}
+/* ////s1//// */
+
+
+
+
+/* ////s2//// */
+/* font */
+.s2 .font{
+    display: flex;
+    justify-content: center;
+    width: 500px;
+    gap: 1em;
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+.s2 .font>div{
+    padding: 8px 0;
+    flex-grow: 1;
+    line-height: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid var(--btn-color);
+    text-align: center;
+}
+
+.s2 .font>div p:nth-child(1){
+    color:var(--subpoint-color);
+}
+
+.s2 .font>div:nth-child(1){
+    font-family: 'TTTtangsbudaejjigaeB';
+    font-size: 0.8em;
+}
+
+.s2 .font>div:nth-child(2){
+    font-family: 'Hahmlet-Regular';
+}
+
+.s2 .font>div:nth-child(3){
+    font-family: 'SSVeryBadHandwriting';
+}
+
+.s2 .font>div:nth-child(4){
+    font-family: 'KimjungchulScript-Bold';
+}
+
+/* color */
+.s2 .color{
+    width: 320px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1em;
+    font-size: 0.8em;
+}
+
+.s2 .color{
+    flex-grow: 1;
+    text-align: center;
+    font-family: 'KimjungchulScript-Bold';
+}
+
+.s2 .color span{
+    display: block;
+    width: 80px;
+    height: 80px;
+    margin-bottom: 10px;
+    border-radius: 50%;
+}
+
+.s2 .color div:nth-child(1) span{
+    background-color: var(--btn-color);
+}
+
+.s2 .color div:nth-child(2) span{
+    background-color: var(--background-color);
+}
+
+.s2 .color div:nth-child(3) span{
+    background-color: var(--point-color);
+}
+
+.s2 .color div:nth-child(4) span{
+    background-color: var(--text-color);
+    border: 1px solid var(--background-color);
+}
+
+.s2 .color div:nth-child(5) span{
+    background-color: var(--subpoint-color);
+}
+
+.s2 .color div:nth-child(6) span{
+    background-color: var(--detail-text);
+}
+/* ////s2//// */
+
+
+
+
+/* ////s3//// */
+.s3{
+    font-family: 'TTTtangsbudaejjigaeB';
+    font-size: 1.2em;
+    text-align: center;
+    flex-direction: column;
+}
+
+.s3>.de{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 80px;
+}
+
+.s3>div p{
+    color:var(--btn-color);
+}
+
+.s3 .pc{
+    width: 570px;
+}
+
+.s3 .ta{
+    width: 340px;
+}
+
+.s3 .mo{
+    width: 250px;
+}
+
+.pre{
+    width: 100%;
+    height: 400px;
+    background: url(../img/pre.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.pre img{
+    width: 100%;
+}
+/* ////s3//// */
+
+
+
+
+/* ////notice//// */
+.notice{
+    background-color: var(--subpoint-color);
+    color:var(--text-color);
+    width: 100%;
+    max-width: 1920px;
+    margin: auto;
+    padding: 30px;
+    text-align: center;
+    clear: both;
+}
+
+.notice>h5{
+    padding-bottom: 10px;
+    font-family: 'SSVeryBadHandwriting';
+}
+
+.notice>P{
+    margin: auto;
+    font-family: 'Hahmlet-Regular';
+    font-weight: 300;
+    letter-spacing: 1px;
+    font-size: 12px;
+    opacity: 0.7;
+}
+/* ////notice//// */

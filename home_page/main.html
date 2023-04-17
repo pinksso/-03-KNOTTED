@@ -1,0 +1,962 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>knotted</title>
+    <!-- favicon -->
+    <link href="img/favicon.ico" rel="shortcut icon">
+    <!-- css -->
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/nav.css" rel="stylesheet">
+    <link href="css/restyle.css" rel="stylesheet">
+    <!-- js -->
+    <script src="js/jquery-3.6.3.min.js"></script>
+    <script defer src="js/script.js"></script>
+    <!-- fontawesome_cdn -->
+    <script src="https://kit.fontawesome.com/14aac06ca9.js" crossorigin="anonymous"></script>
+    <!-- fadeup_cdn-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- slick_cdn -->
+    <link rel="stylesheet" type="text/css" href="./slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="./slick/slick-theme.css">
+    <script src="./slick/slick.js" type="text/javascript" charset="utf-8"></script>
+    <!--swiper_cdn-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+</head>
+<body>
+    <!-- mouse -->
+    <!-- <div id="ms"><img src="img/mouse.png" alt=""></div> -->
+    <!-- //mouse -->
+
+
+
+
+    <!-- ////section_wrap//// -->
+    <div id="wrap">
+        <!-- notice -->
+        <div class="notice"><span>노티드 잠실 롯데몰 GRAND OPENING</span> <i>!</i>  2023.04.30 ~ Comming Soon</div>
+        <!-- ////header//// -->
+        <header class="navbar" data-aos="fade-up" data-aos-delay="200" data-aos-duration="700">
+            <!-- nav -->
+            <nav>
+                <!-- logo -->
+                <div class="navbar__logo">
+                    <a href="진행중.html"><img src="img/knotted_logo.png" alt="logo"/></a>
+                </div>
+                <!-- menu -->
+                <div class="nav">
+                    <div class="menus">
+                        <ul class="navbar__menus">
+                            <li><a href="">MENU</a>
+                                <ul class="submenu">
+                                    <li><a href="#">DONUT</a></li>
+                                    <li><a href="#">CAKE</a></li>
+                                    <li><a href="#">BAKERY</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="">SHOP</a></li>
+                            <li><a href="">LOCATION</a></li>
+                            <li><a href="">BRAND</a>
+                                <ul class="submenu">
+                                    <li><a href="#">STORY</a></li>
+                                    <li><a href="#">COLLABO</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- icons -->
+                    <div class="navbar__icons">
+                        <a href="#" class="res">reserve</a>
+                        <!-- sch box -->
+                        <form action="#" class="search-box" id="search-box">
+                            <input type="text" name="" placeholder="Type something to search..">
+                            <input type="submit" name="" value="go">
+                        </form>
+                        <a href="#" class="search" onclick="show();"><i class="fa-solid fa-magnifying-glass"></i></a>
+                        <!-- hambuger메뉴 -->
+                        <a href="#" class="navbar__toggleBtn" onclick="ToggleMenu();"><i class="fa-solid fa-bars"></i></a>
+                    </div>
+                </div>
+            </nav>
+            <!-- nav -->
+        </header>
+        <!-- ////header//// -->
+
+        <!-- ////main//// -->
+        <main>
+            <!-- left -->
+            <div class="left" data-aos="fade-up" data-aos-delay="600" data-aos-duration="1250">
+                <!-- title -->
+                <div class="title">
+                    <img src="img/main_logo.png" alt="main_logo"/>
+                    <h2>
+                        Premium cake, donuts, dessert cafe
+                    </h2>
+                    <div>
+                        <p>Notide is a dessert cafe where you can enjoy various bakeries, cakes, and donuts, <span>offering premium flavors at reasonable prices</span>
+                            <span>We are trying to bring happiness to everyone by creating a new trend with Noted's signature,</span> <span>cream-filled doughnuts and cute packaging.</span>
+                        </p>
+                        <a href="#" class="btn">STORE</a>
+                    </div>
+                </div>
+            </div>
+            <!-- right -->
+            <div class="right" data-aos="fade-up" data-aos-delay="800" data-aos-duration="1850">
+                <!-- Swiper_slide-->
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="img/main01.jpg" alt="main01"/>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/main02.jpg" alt="main02"/>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/main03.jpg" alt="main03"/>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/main04.jpg" alt="main04"/>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+                <!-- //Swiper -->
+            </div>
+        </main>
+        <!-- ////main//// -->
+
+
+
+
+        <!-- ////s1//// -->
+        <div class="s1bg" data-aos="fade-up" data-aos-delay="850" data-aos-duration="1550">
+            <!-- section01 -->
+            <section id="section1">
+                <!-- menus_list -->
+                <div class="s1_title">
+                    <h3>4 Types items</h3>
+                    <div class="s1title">
+                        <div>
+                            <i class="fa-regular fa-square-check"></i>
+                            <h5>DONUTS</h5>
+                            <P>18 Types</P>
+                        </div>
+                        <div>
+                            <i class="fa-regular fa-square-check"></i>
+                            <h5>CAKES</h5>
+                            <P>18 Types</P>
+                        </div>
+                        <div>
+                            <i class="fa-regular fa-square-check"></i>
+                            <h5>BAKERY</h5>
+                            <P>30 Types</P>
+                        </div>
+                        <div>
+                            <i class="fa-regular fa-square-check"></i>
+                            <h5>DRINK</h5>
+                            <P>19 Types</P>
+                        </div>
+                    </div>
+                </div>
+                <!-- menus_img -->
+                <div class="wrapper">
+                    <ul class="food">
+                        <li class="food-item donut">
+                            <img class="food-item-cover" src="img/s1.jpg" alt="menu01">
+                            <div class="food-item-contents">
+                                <h2>DONUT</h2>
+                                <p>노티드의 대표적인 메뉴, 18종류 프리미엄 도넛</p>
+                            </div>
+                        </li>
+                        <li class="food-item cake">
+                            <img class="food-item-cover" src="img/s2.jpg" alt="menu02">
+                            <div class="food-item-contents">
+                                <h2>CAKE</h2>
+                                <p>중요한 날에도 함께하는 노티드, 18종류 케잌</p>
+                            </div>
+                        </li>
+                        <li class="food-item bakery">
+                            <img class="food-item-cover" src="img/s3.jpg" alt="menu03">
+                            <div class="food-item-contents">
+                                <h2>BAKERY</h2>
+                                <p>달콤하고 향긋한 프리미엄 디저트, 30종류 디저트</p>
+                            </div>
+                        </li>
+                        <li class="food-item bakery">
+                            <img class="food-item-cover" src="img/s4.jpg" alt="menu04">
+                            <div class="food-item-contents">
+                                <h2>DRINK</h2>
+                                <p>차별화 된 깊은 맛, 19종류의 음료</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <!-- section01 -->
+        </div>
+        <!-- ////s1//// -->
+
+
+
+
+        <!-- ////s2//// -->
+        <section class="section2">
+            <!--collection_01 -->
+            <div id="collection">
+                <!-- textbox -->
+                <div class="inner" data-aos="fade-up" data-aos-delay="350" data-aos-duration="1250">
+                    <div class="text">
+                        <h3>NEW  SERIES</h3>
+                        <h5>STROW BETTY COLLECTION</h5>
+                        <p>스트로베리 컬렉션 새롭게 출시</p>
+                        <div>
+                            <a href="#" class="btn">STORE</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- slider -->
+                <section class="variable slider" data-aos="fade-up" data-aos-delay="650" data-aos-duration="1250">
+                    <div>
+                        <img src="img/stro1.jfif" alt="s1"/>
+                        <div class="textbox">
+                            <a href="#">Strawberry Cream<br> Donut</a>
+                            <p>4.200</p>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="img/stro2.jfif" alt="s2"/>
+                        <div class="textbox">
+                            <a href="#">Strawberry Milky<br>Croiffle</a>
+                            <p>4,600</p>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="img/stro3.png" alt="s3"/>
+                        <div class="textbox">
+                            <a href="#">Oreo strawberry<br>cream cake</a>
+                            <p>28,000</p>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="img/stro4.jfif" alt="s4"/>
+                        <div class="textbox">
+                            <a href="#">Strawberry<br>Croissant</a>
+                            <p>5,700</p>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="img/stro5.jfif" alt="s5"/>
+                        <div class="textbox">
+                            <a href="#">Strawberry<br>Creamy</a>
+                            <p>4,400</p>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="img/stro6.jpg" alt="s6"/>
+                        <div class="textbox">
+                            <a href="#">Strawberry<br>Forest</a>
+                            <p>24,000</p>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="img/stro7.jpg" alt="s7"/>
+                        <div class="textbox">
+                            <a href="#">Strawberry<br>Tart</a>
+                            <p>36,000</p>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="img/stro8.jpg" alt="s8"/>
+                        <div class="textbox">
+                            <a href="#">Smile Ghost</a>
+                            <p>21,000</p>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="img/stro9.jpg" alt="s9"/>
+                        <div class="textbox">
+                            <a href="#">Pure Strawberry<br>Jr</a>
+                            <p>21,000</p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <!--collection_01 -->
+            <!--collection_02 -->
+            <div id="collection">
+                <!-- textbox -->
+                <div class="inner" data-aos="fade-up" data-aos-delay="350" data-aos-duration="1250">
+                    <div class="text">
+                        <h3>BEST  KNOTTED</h3>
+                        <h5>STROW BETTY COLLECTION</h5>
+                        <p>스트로베리 컬렉션 새롭게 출시</p>
+                        <div>
+                            <a href="#" class="btn">STORE</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- slider -->
+                <section class="variable slider" data-aos="fade-up" data-aos-delay="650" data-aos-duration="1250">
+                    <div>
+                        <img src="img/be1.jpg" alt="b1"/>
+                        <div class="textbox">
+                            <a href="#">Milk Cream<br>Donut</a>
+                            <p>3,900</p>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="img/be2.jpg" alt="b2"/>
+                        <div class="textbox">
+                            <a href="#">Classic Vanilla<br>Donut</a>
+                            <p>3,500</p>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="img/be3.jpg" alt="b3"/>
+                        <div class="textbox">
+                            <a href="#">Oreo Croissant</a>
+                            <p>5,400</p>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="img/be4.jpg" alt="b4"/>
+                        <div class="textbox">
+                            <a href="#">New York Butter<br>Milk Scone</a>
+                            <p>3,900</p>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="img/be5.jpg" alt="b5"/>
+                        <div class="textbox">
+                            <a href="#">Crushed Choco</a>
+                            <p>21,000</p>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="img/be6.jpg" alt="b6"/>
+                        <div class="textbox">
+                            <a href="#">Mint choco Donut</a>
+                            <p>3,900</p>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="img/be7.jpg" alt="b7"/>
+                        <div class="textbox">
+                            <a href="#">Rice Cheese Salt bread</a>
+                            <p>3,500</p>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="img/be8.jpg" alt="b8"/>
+                        <div class="textbox">
+                            <a href="#">Whole wheat<br>pecan Scone</a>
+                            <p>4,200</p>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="img/be9.jpg" alt="b9"/>
+                        <div class="textbox">
+                            <a href="#">Chilli Sausage<br>Pastry</a>
+                            <p>6,500</p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <!--collection_02 -->
+        </section>
+        <!-- ////s2//// -->
+
+
+
+
+
+        <!-- ////s3//// -->
+        <div class="s3bg">
+            <!-- title -->
+            <div class="text">
+                <h3>EVENT</h3>
+                <h5>Hourly Events</h5>
+                <div>
+                    <a href="#" class="btn">VIEW</a>
+                </div>
+            </div>
+            <!-- events_slider -->
+            <section class="events slider" data-aos="fade-up" data-aos-delay="550" data-aos-duration="1250">
+                <!-- event01 -->
+                <div class="event">
+                    <h1>#</h1>
+                    <!-- texts -->
+                    <div class="event_title">
+                        <h2>
+                            아침시간 <span>노티드 식빵</span> 증정
+                        </h2>
+                        <p>TIME AM7:30 ~ AM9:00</p>
+                        <div>
+                            <p>노티드 스페셜 타임, 이벤트 상품 구매 시 노티드 우유식빵 증정</p>
+                            <a href="#" class="btn">STORE</a>
+                        </div>
+                    </div>
+                    <!-- menus -->
+                    <div class="click_menu">
+                        <h5>EVENT <span>PRODUCTS</span></h5>
+                        <!-- slider -->
+                        <section class="break slider">
+                            <div>
+                                <img src="img/e1_1.jpg" alt="e1"/>
+                                <div class="textbox">
+                                    <p>New York Butter<br>Milk Scone</p>
+                                </div>
+                            </div>
+                            <div>
+                                <img src="img/e1_2.jpg"  alt="e2"/>
+                                <div class="textbox">
+                                    <p>Milky<br>Croissant</p>
+                                </div>
+                            </div>
+                            <div>
+                                <img src="img/e1_3.jpg" alt="e3"/>
+                                <div class="textbox">
+                                    <p>Milky Cream <br>Croiffle</p>
+                                </div>
+                            </div>
+                            <div>
+                                <img src="img/e1_4.jpg" alt="e4"/>
+                                <div class="textbox">
+                                    <p>Cinnamon <br>Munch Donut</p>
+                                </div>
+                            </div>
+                            <div>
+                                <img src="img/e1_5.jpg" alt="e5"/>
+                                <div class="textbox">
+                                    <p>Whole wheat <br>pecan Scone</p>
+                                </div>
+                            </div>
+                            <div>
+                                <img src="img/e1_6.jpg" alt="e6"/>
+                                <div class="textbox">
+                                    <p>Vanilla <br>Pudding Pie</p>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+                <!-- event01 -->
+                <!-- event02 -->
+                <div class="event">
+                    <h1>#</h1>
+                    <div class="event_title">
+                        <h2>
+                            저녁시간 <span>케이크 세일</span>
+                        </h2>
+                        <p>TIME PM5:30 ~ PM9:00</p>
+                        <div>
+                            <p>노티드 스페셜 타임, 이벤트 상품 구매 시 노티드 우유식빵 증정</p>
+                            <a href="#" class="btn">STORE</a>
+                        </div>
+                    </div>
+                    <div class="click_menu">
+                        <h5>EVENT <span>PRODUCTS</span></h5>
+                        <!-- slider -->
+                        <section class="break slider">
+                            <div>
+                                <img src="img/e2_1.jpg" alt="e2-1"/>
+                                <div class="textbox">
+                                    <p>Strawberry<br>Forest</p>
+                                </div>
+                            </div>
+                            <div>
+                                <img src="img/e2_2.jpg" alt="e2-2"/>
+                                <div class="textbox">
+                                    <p>New Year Cream<br> Bunny Cake</p>
+                                </div>
+                            </div>
+                            <div>
+                                <img src="img/e2_3.jpg" alt="e2-3"/>
+                                <div class="textbox">
+                                    <p>Brown<br>Bear</p>
+                                </div>
+                            </div>
+                            <div>
+                                <img src="img/e2_4.jpg" alt="e2-4"/>
+                                <div class="textbox">
+                                    <p>Grand<br>Montblanc</p>
+                                </div>
+                            </div>
+                            <div>
+                                <img src="img/e2_5.jpg" alt="e2-5"/>
+                                <div class="textbox">
+                                    <p>Crushed<br>Choco</p>
+                                </div>
+                            </div>
+                            <div>
+                                <img src="img/e2_6.jpg" alt="e2-6"/>
+                                <div class="textbox">
+                                    <p>Mango<br>smile</p>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+                <!-- event02 -->
+                <!-- event03 -->
+                <div class="event">
+                    <h1>#</h1>
+                    <div class="event_title">
+                        <h2>
+                            페이글 <span>1+1 증정</span>
+                        </h2>
+                        <p>DAY 04.15 ~ 08.30</p>
+                        <div>
+                            <p>노티드 스페셜 타임, 이벤트 상품 구매 시 노티드 우유식빵 증정</p>
+                            <a href="#" class="btn">STORE</a>
+                        </div>
+                    </div>
+                    <div class="click_menu">
+                        <h5>EVENT <span>PRODUCTS</span></h5>
+                        <!-- slider -->
+                        <section class="break slider">
+                            <div>
+                                <img src="img/e3_1.jpg" alt="e3-1"/>
+                                <div class="textbox">
+                                    <p>Original<br>Ring-Donut</p>
+                                </div>
+                            </div>
+                            <div>
+                                <img src="img/e3_2.jpg" alt="e3-2"/>
+                                <div class="textbox">
+                                    <p>Salty<br> Milk Pagle</p>
+                                </div>
+                            </div>
+                            <div>
+                                <img src="img/e3_3.jpg" alt="e3-3"/>
+                                <div class="textbox">
+                                    <p>Milk tea<br>Pagle</p>
+                                </div>
+                            </div>
+                            <div>
+                                <img src="img/e3_4.jpg" alt="e3-4"/>
+                                <div class="textbox">
+                                    <p>Pistachi-Orange<br>Ring-Donut</p>
+                                </div>
+                            </div>
+                            <div>
+                                <img src="img/e3_5.jpg" alt="e3-5"/>
+                                <div class="textbox">
+                                    <p>Choco Holic<br>Pagle</p>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+                <!-- event03 -->
+            </section>
+        </div>
+        <!-- ////s3//// -->
+
+
+
+
+        <!-- ////s4//// -->
+        <section id="section4">
+            <!-- left -->
+            <div class="collabo">
+                <!-- title -->
+                <h3>Knotted <span>X GOODS</span></h3>
+                <a href="#" class="all" data-aos="fade-up" data-aos-delay="250" data-aos-duration="1250">
+                    <h5>view</h5>
+                    <i class="fa-solid fa-right-from-bracket"></i></a>
+                </a>
+                <!-- goods_list -->
+                <div class="containers" data-aos="fade-up" data-aos-delay="450" data-aos-duration="1250">
+                    <!-- box1 -->
+                    <div class="box_wrapper">
+                        <div class="box">
+                            <div class="imgbx">
+                                <img src="img/g1.png" alt="g1">
+                            </div>
+                            <div class="content">
+                                <div>
+                                    <h2>노티드 X 코모폴리탄</h2>
+                                    <p>여기저기 두고 요리조리 봐도 귀여운 미니 러그</p>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#">#KNOTTED X COSMOPOLITAN</a>
+                    </div>
+                    <!-- box2 -->
+                    <div class="box_wrapper">
+                        <div class="box">
+                            <div class="imgbx">
+                                <img src="img/g2.png" alt="g2">
+                            </div>
+                            <div class="content">
+                                <div>
+                                    <h2>노티드 x 스토조</h2>
+                                    <p>이번시즌 처음 선보이는 뉴컬러로 왠지 스테디셀러가 될 것만 같아요</p>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#">#KNOTTED X STOOGE</a>
+                    </div>
+                    <!-- box3 -->
+                    <div class="box_wrapper">
+                        <div class="box">
+                            <div class="imgbx">
+                                <img src="img/g3.jpg" alt="g3">
+                            </div>
+                            <div class="content">
+                                <div>
+                                    <h2>노티드 x 이니스프리</h2>
+                                    <p>dddddddddd</p>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#">#KNOTTED X INISFREE</a>
+                    </div>
+                    <!-- box4 -->
+                    <div class="box_wrapper">
+                        <div class="box">
+                            <div class="imgbx">
+                                <img src="img/g4.png" alt="g4">
+                            </div>
+                            <div class="content">
+                                <div>
+                                    <h2>노티드 X 카카오</h2>
+                                    <p>노티드 콜드브루와 달달한 크림 조합. 9월중 공개됩니다🙂
+                                        조금만 기다려주세요!</p>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#">#KNOTTED X KAKAO</a>
+                    </div>
+                </div>
+            </div>
+            <!-- left -->
+            <!-- right -->
+            <div class="new_goods">
+                <!-- texts -->
+                <div class="goods_text" data-aos="fade-up" data-aos-delay="350" data-aos-duration="1250">
+                    <h5>Comming Soon</h5>
+                    <h1><span>만나당 X</span> Knotted</h1>
+                    <p class="mop">쫄깃쫄깃한 떡과 노티드의 앙버터의 만남 <i>!</i> <br> #갤러리아압구정 에서 12/31까지 만나요
+                        한정수량으로 판매중입니다 :)
+                    </p>
+                </div>
+                <p data-aos="fade-up" data-aos-delay="450" data-aos-duration="1250">쫄깃쫄깃한 떡과 노티드의 앙버터의 만남 <i>!</i> <br> #갤러리아압구정</p>
+                <!-- img -->
+                <div class="img" data-aos="fade-up" data-aos-delay="550" data-aos-duration="1250">
+                    <div class="back"></div>
+                    <img src="img/goods.png" alt="goods"/>
+                    <img class="sub" src="img/c323.png" alt="goods_sub"/>
+                </div>
+                <!-- date -->
+                <div class="date" data-aos="fade-up" data-aos-delay="350" data-aos-duration="1250">
+                    <div class="days_box">
+                        <span class="days"></span>
+                        <div>days</div>
+                    </div>
+                    <div class="days_box">
+                        <span class="hours"></span>
+                        <div>hour</div>
+                    </div>
+                    <div class="days_box">
+                        <span class="minutes"></span>
+                        <div>min</div>
+                    </div>
+                    <div class="days_box">
+                        <span class="seconds"></span>
+                        <div>sec</div>
+                    </div>
+                </div>
+            </div>
+            <!-- right -->
+        </section>
+        <!-- ////s4//// -->
+
+
+
+
+        <!-- ////s5//// -->
+        <div class="s5bg">
+            <!-- section05 -->
+            <section id="section5">
+                <!-- logo_title -->
+                <div class="insta_logo" data-aos="fade-up" data-aos-delay="450" data-aos-duration="1250">
+                    <!-- insta_logo -->
+                    <div class="circle">
+                        <div class="logo">
+                            <img src="img/insta_logo.jpg" alt="insta_logo"/>
+                        </div>
+                        <div class="texts">
+                            <p>knotted_insta</p>
+                        </div>
+                    </div>
+                    <!-- insta_info -->
+                    <div class="insta_info">
+                        <h5><i class="fa-brands fa-instagram"></i> 노티드Cafe</h5>
+                        <div class="follow">
+                            <a href="#" class="">fallow</a>
+                            <a href="" class=""><i class="fa-solid fa-user-plus"></i></a>
+                        </div>
+                        <div class="insta_text">WELCOME TO<br>KNOTTED WORLD🫶🏻<br>
+                            <a href="https://litt.ly/knotted" target="_blank">litt.ly/knotted</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- img_wrap -->
+                <div class="imgwrap" data-aos="fade-up" data-aos-delay="550" data-aos-duration="1250">
+                    <div class="insta_wrap">
+                        <!-- box1 -->
+                        <div class="insta_box">
+                            <div class="insta_img">
+                                <img src="img/in1.png" alt="in1"/>
+                            </div>
+                            <div class="insta_icon">
+                                <a href="#"><i class="fa-solid fa-hashtag"></i>Go Insta</a>
+                            </div>
+                        </div>
+                        <!-- box2 -->
+                        <div class="insta_box">
+                            <div class="insta_img">
+                                <img src="img/in2.jpg" alt="in2"/>
+                            </div>
+                            <div class="insta_icon">
+                                <a href="#"><i class="fa-solid fa-hashtag"></i>Go Insta</a>
+                            </div>
+                        </div>
+                        <!-- box3 -->
+                        <div class="insta_box">
+                            <div class="insta_img">
+                                <img src="img/in3.png" alt="in3"/>
+                            </div>
+                            <div class="insta_icon">
+                                <a href="#"><i class="fa-solid fa-hashtag"></i>Go Insta</a>
+                            </div>
+                        </div>
+                        <!-- box4 -->
+                        <div class="insta_box">
+                            <div class="insta_img">
+                                <img src="img/in4.png" alt="in4"/>
+                            </div>
+                            <div class="insta_icon">
+                                <a href="#"><i class="fa-solid fa-hashtag"></i>Go Insta</a>
+                            </div>
+                        </div>
+                        <!-- box5 -->
+                        <div class="insta_box">
+                            <div class="insta_img">
+                                <img src="img/in5.png" alt="in5"/>
+                            </div>
+                            <div class="insta_icon">
+                                <a href="#"><i class="fa-solid fa-hashtag"></i>Go Insta</a>
+                            </div>
+                        </div>
+                        <!-- box6 -->
+                        <div class="insta_box">
+                            <div class="insta_img">
+                                <img src="img/in6.png" alt="in6"/>
+                            </div>
+                            <div class="insta_icon">
+                                <a href="#"><i class="fa-solid fa-hashtag"></i>Go Insta</a>
+                            </div>
+                        </div>
+                        <!-- box7 -->
+                        <div class="insta_box">
+                            <div class="insta_img">
+                                <img src="img/in7.jpg" alt="in7"/>
+                            </div>
+                            <div class="insta_icon">
+                                <a href="#"><i class="fa-solid fa-hashtag"></i>Go Insta</a>
+                            </div>
+                        </div>
+                        <!-- box8 -->
+                        <div class="insta_box">
+                            <div class="insta_img">
+                                <img src="img/in8.png" alt="in8"/>
+                            </div>
+                            <div class="insta_icon">
+                                <a href="#"><i class="fa-solid fa-hashtag"></i>Go Insta</a>
+                            </div>
+                        </div>
+                        <!-- box9 -->
+                        <div class="insta_box">
+                            <div class="insta_img">
+                                <img src="img/in9.jfif" alt="in9"/>
+                            </div>
+                            <div class="insta_icon">
+                                <a href="#"><i class="fa-solid fa-hashtag"></i>Go Insta</a>
+                            </div>
+                        </div>
+                        <!-- box10 -->
+                        <div class="insta_box">
+                            <div class="insta_img">
+                                <img src="img/in10.jpg" alt="in10"/>
+                            </div>
+                            <div class="insta_icon">
+                                <a href="#"><i class="fa-solid fa-hashtag"></i>Go Insta</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- img_card -->
+                    <img src="img/s5.png" alt="card"/>
+                </div>
+            </section>
+            <!-- section05 -->
+            </div>
+        <!-- ////s5//// -->
+    </div>
+    <!-- ////section_wrap//// -->
+
+
+
+
+    <!-- ////footer//// -->
+    <footer class="fixed-footer">
+        <!-- inner -->
+        <div class="inner">
+            <!-- f_logo -->
+            <img src="img/f_logo.png" alt="f_logo"/>
+            <!-- select -->
+            <div class="select-container">
+                <select class="select-box" onchange="window.open(value,'_blank');">
+                    <option value="none" selected hidden>Choose</option>
+                    <option value="https://www.gffg.co.kr/">GFFG</option>
+                    <option value="https://smartstore.naver.com/cafeknotted/">Smart Store</option>
+                </select>
+            </div>
+            <!-- list -->
+            <ul>
+                <li><a href="#">1:1문의</a></li>
+                <li><a href="#">공지사항</a></li>
+                <li><a href="#">자주묻는질문</a></li>
+                <li><a href="#">이용약관</a></li>
+                <li><a href="#">개인정보처리방침</a></li>
+                <li><a href="#">위치기반서비스이용약관</a></li>
+            </ul>
+            <!-- info -->
+            <div class="info">
+                <p>회사명 : 노티드(주식회사 지에프에프지)</p>
+                <p>대표이사명 : 이준범</p>
+                <p>사업자등록번호 : 248-81-00620</p>
+                <p>통신판매업신고번호 : 2020-서울강남-02297</p>
+                <p>주소 : 서울특별시 강남구 도산대로51길 16</p>
+            </div>
+            <!-- copy -->
+            <p class="copy">Copyright ⓒ 2021 Knotted. <br>All Rights Reserved.</p>
+        </div>
+    </footer>
+    <!-- ////footer//// -->
+
+
+
+
+    <!-- ////mobile_navigation//// -->
+    <div class="navigation_mobile">
+        <!-- mobile_back -->
+        <div class="mobg"></div>
+        <!-- mobile_navi -->
+        <div class="navigation">
+            <ul>
+                <!-- home -->
+                <li class="list activenavi">
+                    <a href="#">
+                        <span class="icon">
+                            <img src="img/home.png" alt="home"/>
+                        </span>
+                        <span class="icontext">Home</span>
+                    </a>
+                </li>
+                <!-- donuts -->
+                <li class="list">
+                    <a href="#">
+                        <span class="icon">
+                            <img src="img/donuts.png" alt="donuts"/>
+                        </span>
+                        <span class="icontext">Donut</span>
+                    </a>
+                </li>
+                <!-- cake -->
+                <li class="list">
+                    <a href="#">
+                        <span class="icon">
+                            <img src="img/birthday-cake.png" alt="cake"/>
+                        </span>
+                        <span class="icontext">Cake</span>
+                    </a>
+                </li>
+                <!-- bakery -->
+                <li class="list">
+                    <a href="#">
+                        <span class="icon">
+                            <img src="img/bakery.png" alt="bakery"/>
+                        </span>
+                        <span class="icontext">Bakery</span>
+                    </a>
+                </li>
+                <!-- write -->
+                <li class="list">
+                    <a href="#">
+                        <span class="icon">
+                            <img src="img/writing.png" alt="write"/>
+                        </span>
+                        <span class="icontext">Reserve</span>
+                    </a>
+                </li>
+                <!-- indicator -->
+                <div class="indicator"></div>
+            </ul>
+        </div>
+        <!-- mobile_navi -->
+    </div>
+    <!-- ////mobile_navigation//// -->
+
+
+
+
+    <!-- ////pc_navigation//// -->
+    <div class="navigation_ham">
+        <!-- nav_area -->
+        <div class="navArea">
+            <ul class="navbar__menu">
+                <li><a href="#" onmouseenter="changeImage('img/hammenu01.jpg')">MENU</a>
+                    <ul class="submenu">
+                        <li><a href="#">DONUT</a></li>
+                        <li><a href="#">CAKE</a></li>
+                        <li><a href="#">BAKERY</a></li>
+                    </ul>
+                </li>
+                <li><a href="#" onmouseenter="changeImage('img/hammenu02.png')">SHOP</a></li>
+                <li><a href="#" onmouseenter="changeImage('img/hammenu03.jpg')">LOCATION</a></li>
+                <li><a href="#" onmouseenter="changeImage('img/hammenu04.png')">BRAND</a>
+                    <ul class="submenu">
+                        <li><a href="#">STORY</a></li>
+                        <li><a href="#">COLLABO</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <!-- img_area -->
+        <div class="imgArea">
+            <img id="ham_img" src="img/hammenu01.jpg" alt="hammenu"/>
+        </div>
+        <!-- back_icon -->
+        <a href="#" class="navbar__toggleBtn" onclick="ToggleMenu();">
+            <i class="fa-solid fa-right-to-bracket"></i>
+        </a>
+    </div>
+    <!-- ////pc_navigation//// -->
+
+
+
+
+    <!-- ////scrollup//// -->
+    <a href="" class="scrollUp">
+        <i class="fa-solid fa-chevron-up"></i>
+    </a>
+    <!-- ////scrollup//// -->
+</body>
+</html>
