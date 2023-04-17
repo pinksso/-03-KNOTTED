@@ -337,14 +337,14 @@
     }
 
     /* s2 */
-    #collection{
+    .collection{
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
         max-width: 1920px;
     }
 
-    #collection:first-child{
+    .collection:first-child{
         margin-bottom: 140px;
     }
 

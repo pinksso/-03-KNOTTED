@@ -439,14 +439,14 @@ section{
 
 
 /* ////s2//// */
-#collection{
+.collection{
     display: flex;
     justify-content: space-between;
     align-items: center;
     max-width: 1920px;
 }
 
-#collection:first-child{
+.collection:first-child{
     margin-bottom: 45px;
 }
 
@@ -1098,7 +1098,7 @@ section{
     width: 190px;
     position: absolute;
     right: 10%;
-    bottom:-155px;
+    bottom:-15px;
     z-index: 100;
     transition: .7s;
 }

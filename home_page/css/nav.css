@@ -425,12 +425,12 @@ header.active{
 }
 
 /* list */
-.navigation ul{
+.navigation>div{
     display: flex;
     width:350px;
 }
 
-.navigation ul li{
+.navigation .list{
     position: relative;
     list-style: none;
     width:70px;
@@ -438,7 +438,7 @@ header.active{
     z-index: 1;
 }
 
-.navigation ul li a{
+.navigation .list a{
     position: relative;
     display: flex;
     flex-direction: column;
@@ -449,7 +449,7 @@ header.active{
 }
 
 /* icon_img */
-.navigation ul li a .icon{
+.navigation .list a .icon{
     position: relative;
     display: block;
     line-height: 65px;
@@ -463,11 +463,11 @@ header.active{
     width: 40px;
 }
 
-.navigation ul li.activenavi a .icon{
+.navigation .list.activenavi a .icon{
     transform: translateY(-35px);
 }
 
-.navigation ul li a .icontext{
+.navigation .list a .icontext{
     font-size: 14px;
     position: absolute;
     letter-spacing: 0.05em;
@@ -476,7 +476,7 @@ header.active{
     transform: translateY(30px);
 }
 
-.navigation ul li.activenavi a .icontext{
+.navigation .list.activenavi a .icontext{
     opacity: 1;
     transform: translateY(15px);
 }
@@ -519,23 +519,23 @@ header.active{
 }
 
 /* move */
-.navigation ul li:nth-child(1).activenavi ~.indicator{
+.navigation .list:nth-child(1).activenavi ~.indicator{
     transform: translateX(calc(70px*0));
 }
 
-.navigation ul li:nth-child(2).activenavi ~.indicator{
+.navigation .list:nth-child(2).activenavi ~.indicator{
     transform: translateX(calc(70px*1));
 }
 
-.navigation ul li:nth-child(3).activenavi ~.indicator{
+.navigation .list:nth-child(3).activenavi ~.indicator{
     transform: translateX(calc(70px*2));
 }
 
-.navigation ul li:nth-child(4).activenavi ~.indicator{
+.navigation .list:nth-child(4).activenavi ~.indicator{
     transform: translateX(calc(70px*3));
 }
 
-.navigation ul li:nth-child(5).activenavi ~.indicator{
+.navigation .list:nth-child(5).activenavi ~.indicator{
     transform: translateX(calc(70px*4));
 }
 
